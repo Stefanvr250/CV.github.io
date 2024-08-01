@@ -150,8 +150,13 @@ body {
 
 .home-content p {
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   margin: 20px 0 40px;
+}
+
+.text-content p {
+  text-align: center;
+  display: flex;
 }
 
 .home-content p::before {
@@ -165,6 +170,7 @@ body {
   animation: showRight 1s ease forwards;
   animation-delay: 1.6s;
 }
+
 
 .home-content .btn-box {
   position: relative;
@@ -271,7 +277,7 @@ body {
   border: 2px solid #fcfcfc;
   border-radius: 50%;
   font-size: 20px;
-  color: #ffffff;
+  color: #222331;
   text-decoration: none;
   z-index: 1;
   overflow: hidden;
@@ -300,6 +306,12 @@ body {
   padding: 100px 10%;
 }
 
+.about-content {
+  max-width: 850px;
+  padding: 20px;
+  flex: 1;
+}
+
 .about, .skills, .contact {
   height: 100vh;
   display: flex;
@@ -310,13 +322,44 @@ body {
   text-align: center;
 }
 .about {
+  height: 40vh;
+  display: flex;
+  align-items: center;
   background-color: #e0e0e0;
+}
+
+.about p {
+  font-size: 26px;
+  display: block;
+  padding: 10px;
+
 }
 
 .about h2 {
   position: relative;
-  font-size: 16px;
+  font-size: 37px;
   margin: 20px 0 40px;
+}
+
+.skills-content h2 {
+  font-size: 37px;
+}
+
+.skills-content p {
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+.skills-content {
+  max-width: 850px;
+  padding: 20px;
+  flex: 1;
+}
+
+.bullets {
+  text-align: left;
+  font-size: 24px;
 }
 
 .skills {
@@ -325,6 +368,10 @@ body {
 
 .contact {
   background-color: #c0c0c0;
+}
+
+.contact h2 {
+  font-size: 30px;
 }
 
 .contact .home-links {
@@ -338,12 +385,12 @@ body {
 .email-address {
   margin-top: 20px;
   font-size: 16px;
-  color: #ffffff;
+  color: #222331;
   text-align: center;
 }
 
 .email-link {
-  color: #ffffff;
+  color: #222331;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -373,6 +420,11 @@ body {
   .home-content h3 {
     font-size: 24px;
   }
+  .home-content p {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
 
   .btn-box {
     width: 100%;
@@ -390,6 +442,7 @@ body {
   }
 
 }
+
 
 /*Keyframes animation*/
 @keyframes showRight {

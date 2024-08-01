@@ -300,7 +300,7 @@ body {
   padding: 100px 10%;
 }
 
-.about, .cv, .contact {
+.about, .skills, .contact {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -319,7 +319,7 @@ body {
   margin: 20px 0 40px;
 }
 
-.cv {
+.skills {
   background-color: #d0d0d0;
 }
 
@@ -333,6 +333,23 @@ body {
   width: auto; /* Adjust width to fit content */
   display: inline-flex;
   justify-content: space-between;
+}
+
+.email-address {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.email-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.email-link:hover {
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {

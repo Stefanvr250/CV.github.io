@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Font styling */  
+  
+  :root {
+   --font-family: "Chakra Petch", sans-serif;
+   --normal-font: 400;
+   --bold-font: 700;
+   --bolder-font: 900;
+   --bg-color: #fcfcfc;
+   --primary-color: #4756df;
+   --secondary-color: #ff7235;
+   --primary-shadow: #8b8eaf;
+   --secondary-shadow: #a17a69;
+   --bottom-margin: 0.5rem;
+   --bottom-margin-2: 1rem;
+   --line-height: 1.7rem;
+   --transition: 0.3s;
+  }
+/* Web styling */
+
+body {
+  background: #9ba8b3;
+  color: #ffffff;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+/*header styling and color */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85%;
+  padding: 20px 10%;
+  background: rgba(34, 35, 49, 0.8);
+  backdrop-filter: blur;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  position: relative;
+  font-size: 25px;
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #3A3E4B;
+  animation: showRight 1s ease forwards;
+}
+/**/
+.navbar a {
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+  color: #ffffff;
+}
+
+.home {
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  position: relative;
+  text-align: center;
+}
+
+.home-content {
+  background: #222331;
+  max-width: 850px;
+  padding: 20px;
+  flex: 1;
+}
+
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.profile-picture img {
+  width: 30vw;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home-content h1 {
+  position: relative;
+  font-size:  56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.home-content h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #222331;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+
+
+.home-content h3 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: aqua;
+  
+}
+
+.home-content h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #222331;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.4s;
+}
+
+.home-content p {
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.home-content p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #222331;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.6s;
+}
+
+.home-content .btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 60px;
+}
+
+.home-content .btn-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #222331;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.8s;
+  z-index: 2;
+  border-bottom: 0px;
+}
+
+
+.btn-box a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #535353;
+  border: 2px solid #fcfcfc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+  box-sizing: border-box;
+}
+
+
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: white;
+}
+
+
+
+.btn-box a:nth-child(2)::before {
+  background: #535353;
+}
+
+.btn-box a::before {
+  content: '';
+  position: absolute;
+  top: -3px; /* Adjust this to cover the border */
+  left: -3px; /* Adjust this to cover the border */
+  width: 0;
+  height: calc(100% + 6px); /* Adjust this to cover the border */
+  background: #222331;
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn-box a:hover:before {
+  width: 100%;
+
+}
+
+.home-links {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-links::before {
+    position: absolute;
+    top: -3px; /* Adjust this to cover the border */
+    left: -3px; /* Adjust this to cover the border */
+    width: 0;
+    height: calc(100% + 6px); /* Adjust this to cover the border */
+    background: #222331;
+    z-index: -1;
+    transition: .5s;
+  
+}
+
+.home-links a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #fcfcfc;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: .3s;
+  margin: 0 10px;
+}
+
+.home-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #222331;
+  z-index: -1;
+  transition: .3s;
+}
+
+
+.home-links a:hover:before {
+  width: 100%;
+}
+
+.section {
+  padding: 100px 10%;
+}
+
+.about, .cv, .contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: #222331;
+  text-align: center;
+}
+.about {
+  background-color: #e0e0e0;
+}
+
+.about h2 {
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.cv {
+  background-color: #d0d0d0;
+}
+
+.contact {
+  background-color: #c0c0c0;
+}
+
+.contact .home-links {
+  position: static; /* Remove absolute positioning */
+  margin-top: 20px; /* Adjust as necessary */
+  width: auto; /* Adjust width to fit content */
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .home{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .home-content {
+    order: -1;
+  }
+
+  .profile-picture {
+    order: -1;
+  }
+
+  .home-content h1 {
+    font-size: 40px;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
+  }
+
+  .btn-box {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .btn-box a {
+    width: 45%;
+    font-size: 16px;
+  }
+
+  .profile-picture img {
+    width: 40vw;
+    max-width: 200px; 
+  }
+
+}
+
+/*Keyframes animation*/
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+

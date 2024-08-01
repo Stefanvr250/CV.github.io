@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles folder -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!--Title bar-->
+    <title>Portfolio</title>
+
+    <style>
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .section {
+        padding: 100px 10%;
+      }
+
+      .about, .cv, .contact {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        color: #222331;
+      }
+
+      .about {
+        background-color: #e0e0e0;
+      }
+      
+      .cv {
+        background-color: #d0d0d0;
+      }
+
+      .contact {
+        background-color: #c0c0c0;
+      }
+
+      .header {
+        background: rgba(34, 35, 49, 0.8);
+        backdrop-filter: blur(10px);
+      }
+
+      .home-links {
+        margin-top: 20px; /* Adjust as necessary */
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <header class="header">
+        <a href="#" class="logo">My Portfolio.</a>
+
+       <!--Navbar options -->
+
+        <nav class="navbar">
+          <a href="#home" class="active"><i class='bx bx-home-alt-2'></i></a>
+          <a href="#about">About</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+      <div class="home-content">
+        <div class="text-content">
+          <h1>I'm Stefan Janse van Rensburg</h1>
+          <h3>A BSc. Information Technology Student at NWU</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe commodi in autem sed veniam explicabo? Unde, velit inventore recusandae quae deserunt voluptatibus quo magni tempora quos at.</p>
+
+          <!-- Creation of button -->
+          <div class="btn-box">
+            <a href="#cv">Download my CV</a>
+          </div>
+        </div>
+        <div class="profile-picture">
+          <img src="assets/images/profile pic.jpg" alt="Your Image">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque illo aspernatur, praesentium ullam, soluta magni blanditiis eligendi iure deserunt in architecto necessitatibus! Debitis dolor quo aspernatur!</p>
+    </section>
+
+    <section id="cv" class="cv">
+      <h2>My CV</h2>
+      <p>This is the CV section. Add your content here.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      
+      <div class="home-links">
+        <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="#"><i class='bx bxl-github' ></i></a>
+        <a href="#"><i class='bx bxs-envelope' ></i></a>
+      </div>
+    </section>
+
+  </body>
+</html>
